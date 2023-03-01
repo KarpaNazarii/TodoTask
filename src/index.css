@@ -1,0 +1,137 @@
+/*GoogleFonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background: #ffffff;
+  color: #222;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.App{
+  text-align: center;
+  height: 100%;
+  margin-top: 200px;
+
+}
+
+input{
+  background-color: rgba(220,220,220, 0.7);
+  width: 300px;
+  padding: 10px 20px;
+  border:1px solid transparent;
+}
+
+.input-block{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+label{
+  margin-right: 10px;
+}
+
+.border{
+  border-color: red;
+}
+
+.add-btn{
+  background-color: rgba(220,220,220, 1);
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.item{
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap:10px;
+  height: 100%;
+  margin-bottom: 30px;
+  height: 60px;
+  align-items: center;
+}
+
+.no-border{
+  border: none;
+}
+
+.item-title{
+  width: 150px;
+  height: 100%;
+}
+
+.item-delete{
+  background: rgb(134, 49, 46);
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.item-description{
+  
+  width: 150px;
+  height: 100%;
+}
+
+.item-input{
+width: 20px;
+height: 20px;
+}
+
+.none{
+  display: none;
+}
+
+.error{
+  font-weight: 400;
+  font-size: 12px;
+  color: red;
+}
+
+/*Adaptive container*/
+.container{
+  width: 940px;
+  margin: 0 auto;
+}
+
+@media (min-width: 800px) and (max-width: 940px){
+  .container{
+    width: 800px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 600px ) and (max-width: 800px){
+  .container{
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 480px ) and (max-width: 600px){
+  .container{
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 320px ) and (max-width: 480px){
+  .container{
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+
